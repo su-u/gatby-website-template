@@ -7,27 +7,37 @@
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
+    "@types/react-helmet": "^5.0.15",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.32",
+    "gatsby-plugin-graphql-codegen": "^2.7.0",
     "gatsby-plugin-material-ui": "^2.1.6",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-typescript": "^2.3.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-helmet": "^5.2.1",
     "typeface-merriweather": "^0.0.72",
     "typeface-montserrat": "^0.0.75",
+    "typescript": "^3.8.3",
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@types/node": "^12.12.7",
+    "@types/react-helmet": "^5.0.14",
     "eslint": "^6.8.0",
     "eslint-config-react-app": "^5.2.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "ts-node": "^8.8.1"
   },
   "scripts": {
     "build": "gatsby build",
     "clean": "rm -rf public && rm -rf .cache",
     "dev": "NODE_ENV=development rm -rf ./.cache && yarn && gatsby develop -H 0.0.0.0",
-    "develop": "yarn dev",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write src/**/*.{js,jsx}",
     "prebuild": "yarn clean && yarn",
     "start": "yarn develop"
