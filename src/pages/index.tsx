@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 import { IndexHogeQuery } from '../../types/graphql-types';
+import Header from '../components/header';
 // ______________________________________________________
 //
 type Props = {
@@ -9,6 +10,8 @@ type Props = {
 // ______________________________________________________
 //
 const Component: React.FC<Props> = ({ data }) => (
+  <>
+    <Header />
   <div>
     <h1>Hi people</h1>
     <strong>{data.site?.siteMetadata?.title}</strong> site.
@@ -23,6 +26,7 @@ const Component: React.FC<Props> = ({ data }) => (
       </li>
     </ul>
   </div>
+    </>
 );
 // ______________________________________________________
 //
