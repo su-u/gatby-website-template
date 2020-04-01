@@ -1,11 +1,11 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
-import { AuthorsQuery } from "../../types/graphql-types"
+import * as React from 'react';
+import { Link, graphql } from 'gatsby';
+import { AuthorsQuery } from '../../types/graphql-types';
 // ______________________________________________________
 //
 type Props = {
-  data: AuthorsQuery
-}
+  data: AuthorsQuery;
+};
 // ______________________________________________________
 //
 const Component: React.FC<Props> = ({ data }) => (
@@ -27,7 +27,7 @@ const Component: React.FC<Props> = ({ data }) => (
       </li>
     </ul>
   </div>
-)
+);
 // ______________________________________________________
 //
 export const pageQuery = graphql`
@@ -41,7 +41,7 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 // ______________________________________________________
 //
-export default Component
+export default Component;

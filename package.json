@@ -38,7 +38,7 @@
     "clean": "rm -rf public && rm -rf .cache",
     "dev": "NODE_ENV=development rm -rf ./.cache && yarn && gatsby develop -H 0.0.0.0",
     "develop": "gatsby develop -H 0.0.0.0",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "prettier --write src/**/*.{ts,tsx} gatsby-node/**/*.{ts,tsx}",
     "prebuild": "yarn clean && yarn",
     "start": "yarn develop"
   }

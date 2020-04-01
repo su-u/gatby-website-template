@@ -1,5 +1,5 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import { Link } from 'gatsby';
 // ______________________________________________________
 //
 const Component: React.FC = () => (
@@ -12,7 +12,7 @@ const Component: React.FC = () => (
       </li>
     </ul>
   </div>
-)
+);
 // ______________________________________________________
 //
-export default Component
+export default Component;

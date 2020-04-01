@@ -1,11 +1,11 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { AuthorPageContext } from "../../gatsby-node/createAutorPages"
+import * as React from 'react';
+import { Link } from 'gatsby';
+import { AuthorPageContext } from '../../gatsby-node/createAutorPages';
 // ______________________________________________________
 //
 type Props = {
-  pageContext: AuthorPageContext
-}
+  pageContext: AuthorPageContext;
+};
 // ______________________________________________________
 //
 const Component: React.FC<Props> = ({ pageContext }) => (
@@ -20,7 +20,7 @@ const Component: React.FC<Props> = ({ pageContext }) => (
       </li>
     </ul>
   </div>
-)
+);
 // ______________________________________________________
 //
-export default Component
+export default Component;

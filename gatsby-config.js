@@ -15,6 +15,9 @@ module.exports = {
 			options: {
 				fileName: `types/graphql-types.d.ts`
 			}
+		},
+		{
+			resolve: `gatsby-plugin-material-ui`,
 		}
 	]
 }

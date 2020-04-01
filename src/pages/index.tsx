@@ -1,11 +1,11 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
-import { IndexHogeQuery } from "../../types/graphql-types"
+import * as React from 'react';
+import { Link, graphql } from 'gatsby';
+import { IndexHogeQuery } from '../../types/graphql-types';
 // ______________________________________________________
 //
 type Props = {
-  data: IndexHogeQuery
-}
+  data: IndexHogeQuery;
+};
 // ______________________________________________________
 //
 const Component: React.FC<Props> = ({ data }) => (
@@ -23,7 +23,7 @@ const Component: React.FC<Props> = ({ data }) => (
       </li>
     </ul>
   </div>
-)
+);
 // ______________________________________________________
 //
 export const pageQuery = graphql`
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 // ______________________________________________________
 //
-export default Component
+export default Component;
