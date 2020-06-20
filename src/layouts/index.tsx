@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 // ______________________________________________________
 //
-const Component: React.FC = props => (
+const Component: React.FC = (props) => (
   <div>
     <Helmet
       title="Gatsby Default Starter"

@@ -13,7 +13,7 @@ const Component: React.FC<Props> = ({ data }) => (
     <h1>Authors</h1>
     <ul>
       {data.site?.siteMetadata?.authors?.map(
-        author =>
+        (author) =>
           author?.slug && (
             <li key={author.slug}>
               <Link to={`/authors/${author.slug}`}>{author.name}</Link>

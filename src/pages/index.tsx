@@ -12,21 +12,21 @@ type Props = {
 const Component: React.FC<Props> = ({ data }) => (
   <>
     <Header />
-  <div>
-    <h1>Hi people</h1>
-    <strong>{data.site?.siteMetadata?.title}</strong> site.
-    <p>Welcome to your new </p>
-    <p>Now go build something great.</p>
-    <ul>
-      <li>
-        <Link to="/page-2/">Go to page 2</Link>
-      </li>
-      <li>
-        <Link to="/authors/">Go to authors</Link>
-      </li>
-    </ul>
-  </div>
-    </>
+    <div>
+      <h1>Hi people</h1>
+      <strong>{data.site?.siteMetadata?.title}</strong> site.
+      <p>Welcome to your new </p>
+      <p>Now go build something great.</p>
+      <ul>
+        <li>
+          <Link to="/page-2/">Go to page 2</Link>
+        </li>
+        <li>
+          <Link to="/authors/">Go to authors</Link>
+        </li>
+      </ul>
+    </div>
+  </>
 );
 // ______________________________________________________
 //
